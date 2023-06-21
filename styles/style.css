@@ -1,0 +1,456 @@
+/* Общие стили */
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url(../fonts/MontserratAlternates-Regular.ttf);
+  font-weight: 400;
+  }
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url(../fonts/MontserratAlternates-Medium.ttf);
+  font-weight: 500;
+  }
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url(../fonts/MontserratAlternates-SemiBold.ttf);
+  font-weight: 600;
+  }
+@font-face {
+  font-family: 'Montserrat Alternates';
+  src: url(../fonts/MontserratAlternates-Bold.ttf);
+  font-weight: 700;
+  }
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../fonts/ClashDisplay-Regular.ttf);
+    font-weight: 400;
+    }
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../fonts/ClashDisplay-Medium.ttf);
+    font-weight: 500;
+    }
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../fonts/ClashDisplay-Semibold.ttf);
+    font-weight: 600;
+    }
+@font-face {
+    font-family: 'Clash Display';
+    src: url(../fonts/ClashDisplay-Bold.ttf);
+    font-weight: 700;
+    }
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Regular.ttf);
+    font-weight: 400;
+    } 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Medium.ttf);
+    font-weight: 500;
+    }           
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-SemiBold.ttf);
+    font-weight: 600;
+    } 
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../fonts/OpenSans-Bold.ttf);
+    font-weight: 700;
+    } 
+
+body {
+  margin: 0;
+  padding: 0;
+  background: url(.png), linear-gradient(98.74deg, rgba(116, 231, 241, 0.2) 6.4%, rgba(235, 255, 236, 0.2) 91.35%), linear-gradient(237.32deg, #FFA3EB 6.41%, #C6F5C9 35.46%, #E3E6F7 53.5%, #A67EF1 100%);
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+header {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container {
+  margin-right: 130px;
+}
+
+#logo {
+  font-family: 'Montserrat Alternates';
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  line-height: 29px;
+  background: linear-gradient(91.24deg, #5D589B 7.47%, #B39FDE 42.45%, #50499C 77.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  
+}
+
+nav a {
+  margin-left: 62px;
+  text-decoration: none;
+  font-family: 'Open Sans';
+  font-weight: 200;
+  font-size: 16px;
+  color: #0C1170;
+}
+
+.login-button {
+  width: 165px;
+  height: 48px;
+  border-radius: 10px;
+  border-color: transparent;
+  background: linear-gradient(100.86deg, #FFA3EB 6.42%, #FFE8FA 49.41%, #C5D9F9 85.06%);
+  margin-left: auto;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0C1170;
+  cursor: pointer;
+}
+
+
+.hero {
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+#hero-title {
+  font-family: 'Montserrat Alternates';
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  background: linear-gradient(91.24deg, #5D589B 7.47%, #B39FDE 42.45%, #50499C 77.81%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 20px;
+}
+
+#hero-subtitle {
+  font-family: 'Open Sans';
+  width: 518px;
+  height: 135px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0C1170;
+  margin-bottom: 40px;
+}
+
+.hero-buttons {
+  display: flex;
+}
+
+.hero-buttons button {
+  margin-right: 10px;
+  width: 263px;
+  height: 65px;
+  font-family: 'Open Sans';
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #0C1170;
+  cursor: pointer;
+}
+
+.hero-buttons button:first-child {
+  background: linear-gradient(0deg, rgba(240, 240, 240, 0.2), rgba(240, 240, 240, 0.2)), linear-gradient(101.43deg, #FFA3EB 7.25%, #FFE3F9 49.08%, #FFA3EB 96%);
+  opacity: 0.8;
+  border-radius: 10px;
+  border-color: transparent;
+}
+
+.hero-buttons button:last-child {
+  background-color: transparent;
+  border: 1.5px solid #0C1170;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: right;
+}
+
+.hero-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-image img {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+
+
+.create-nfts {
+  padding: 50px 0;
+}
+
+.create-nfts .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.create-nfts .hero-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.create-nfts .hero-text {
+  flex-basis: 38%;
+}
+
+.create-nfts .hero-text h2 {
+  font-family: 'Montserrat Alternates';
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 39px;
+  color: #0C1170;
+  margin-bottom: 20px;
+}
+
+.create-nfts .hero-text p {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0C1170;
+  margin-bottom: 40px;
+}
+
+.subscription-options {
+  display: flex;
+  justify-content: space-between;
+  width: 555px;
+  height: 94px;
+  background: #C1D3FC;
+  padding: 10px;
+  border: 1px solid rgba(93, 88, 155, 0.8);
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+.subscription-option {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.subscription-input {
+  display: none;
+}
+
+.subscription-label {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #0C1170;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.subscription-input:checked + .subscription-label {
+  background: linear-gradient(0deg, rgba(240, 240, 240, 0.2), rgba(240, 240, 240, 0.2)), linear-gradient(101.43deg, #FFA3EB 7.25%, #FFE3F9 49.08%, #FFA3EB 96%);
+  font-weight: 700;
+  background-repeat: no-repeat;
+}
+.create-nfts::after {
+  content: "";
+  display: block;
+  background-image: url("/img/nft-collection.png");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 346px; 
+}
+
+footer {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.footer-divider-full {
+  width: 130.8vw;
+  height: 1px;
+  background-color: #6673DA;
+  position: absolute;
+  bottom: 100%;
+  left: -50vw;
+  right: 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  text-align: center;
+  margin: 2px 0;
+  font-family: 'Open Sans';
+  font-weight: 500;
+  font-size: 13px;
+  color: #0C1170;
+}
+
+.header-divider {
+  width: 149.1vw;
+  height: 1px;
+  background-color: #6673DA;
+  position: absolute;
+  left: -50vw;
+  right: 0;
+}
+
+.hero-image {
+  position: relative;
+  width: 100%;
+}
+
+.hero-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Медиа-запросы для адаптивности */
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 648px;
+  }
+
+  header {
+    padding: 15px;
+  }
+
+  #logo {
+    font-size: 20px;
+  }
+
+  nav a {
+    margin-left: 31px;
+    font-size: 14px;
+  }
+
+  .login-button {
+    width: 106px;
+    height: 36px;
+    margin-left: auto;
+  }
+
+  .hero {
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero-title {
+    font-size: 28px;
+  }
+
+  #hero-subtitle {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 410px) {
+  .container {
+    max-width: 410px;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  #logo {
+    font-size: 18px;
+  }
+
+  nav a {
+    margin-left: 20px;
+    font-size: 12px;
+  }
+
+  .login-button {
+    margin-left: auto;
+  }
+
+  .hero {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #hero-title {
+    font-size: 24px;
+  }
+
+  #hero-subtitle {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    margin-right: 0;
+    margin-bottom: 10px;
+    padding: 6px 12px;
+    font-size: 10px;
+  }
+}
+
+/* Общие стили для всех версий */
+img {
+  max-width: 100%;
+  height: auto;
+}
